@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> </title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		  <title>Bootstrap 4, from LayoutIt!</title>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+			<h1><a href="index.html">Peterborough <span>Tourism</span></a></h1>	
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="" class="icon fa-angle-down">Options</a>
+							<ul>
+								<li><a href="left-sidebar.html">Activities</a></li>
+								<li><a href="right-sidebar.html">Hotels</a></li>
+								<li><a href="no-sidebar.html">Restaurants</a></li>
+							</ul>
+						</li>
+						<li><a href="elements.html">Book</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper style4">
+				<header class="major">
+					<h2>Booking holiday in Peterborough</h2>
+					<p>Last step to have the best time of your life</p>
+				</header>
+				<div class="container">
+						
+				  <div class="container">
+     <label for="Enter your Details">Enter your details</label>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+		  <br>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your last name" required>
+          </div>
+		  <br>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+		  <br>
+          <div class="input-box">
+            <span class="details"></span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+      </form>
+	      <form>
+        <label for="Enter your bankDetails">Enter your bank details</label>
+        <input type="text" id="account-number" name="account-number" placeholder="Enter your account number" required><br>
+
+        <label for="routing-number"></label>
+        <input type="text" id="routing-number" name="routing-number" placeholder="Enter your routing number" required><br>
+
+        <label for="bank-name"></label>
+        <input type="text" id="bank-name" name="bank-name" placeholder="Enter your bank name" required><br>
+
+    </form>
+
+    </div>
+  </div>
+    <div id="booking-container" class="booking-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="drag-box" class="drag-box" draggable="true" ondragstart="drag(event)">
+            Please input your passport or ID
+        </div>
+	</div>	
+	</form>
+		<br>
+		<br>
+        <button type="button" class="submit-button" onclick="submitForm()">Submit</button>
+		
+		
+		
+		
+    <script>
+        var dragBox;
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            dragBox = event.target;
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            event.target.appendChild(dragBox);
+        }
+		        function submitForm() {
+            // Perform any necessary form validation or processing here
+
+            // Simulate submission and display completion message
+            alert("Your application is complete. Your receipt has been sent to your bank account.");
+
+            // Refresh the page
+            window.location.reload();
+			
+		} 	
+    </script>
+	</body>
+</html>
